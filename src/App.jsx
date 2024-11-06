@@ -1,15 +1,12 @@
-
-
-import './App.css'
+import './App.css';
+import Navbar from './Components/Navbar/Navbar.jsx';
 
 function App() {
-
-
   return (
     <>
-  <h3>Zdravka Goranova</h3>
+      <Navbar />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
