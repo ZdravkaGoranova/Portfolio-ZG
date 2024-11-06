@@ -13,14 +13,37 @@ const Home = () => {
       </div>
 
       <section className="home">
+        <div className="home-img">
+          <div className="img-box">
+            <div className="img-item">
+              <img src="./image-zdr-ND.png" alt="" />
+            </div>
+          </div>
+        </div>
         <div className="home-info">
           <h1>Zdravka Goranova</h1>
-          <h2>I&apos;m a Frontend Developer</h2>
+          <h2>
+            I&apos;m a
+            <span
+              style={{ '--i': 2, marginLeft: '10px' }}
+              data-text="Frontend Developer"
+            >
+              Frontend Developer
+            </span>
+            <span
+              style={{ '--i': 1, marginLeft: '10px' }}
+              data-text="Web Developer"
+            >
+              {' '}
+              Web Developer
+            </span>
+          </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            explicabo, reprehenderit laboriosam, officia vero delectus dolores
-            numquam doloremque debitis eius quas praesentium enim accusamus!
-            Cumque illo dolorum maxime porro perferendis.
+            I own a wide range of technologies, including JavaScript, React,
+            Angular, and Node.js. My skills include working with databases such
+            as MongoDB and MySQL, as well as using tools such as Git, GitHub,
+            Visual Studio Code, and others. I combine my technical knowledge
+            with analytical skills and attention to detail.
           </p>
           <div className="btn-sci">
             <a href="" className="btn">
@@ -37,14 +60,6 @@ const Home = () => {
               <a href="#">
                 <i className="bx bxl-gitlab"></i>
               </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="home-img">
-          <div className="img-box">
-            <div className="img-item">
-              <img src="./image-zdr.jpg" alt="" />
             </div>
           </div>
         </div>
