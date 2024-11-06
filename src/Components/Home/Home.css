@@ -35,27 +35,93 @@
   transition: 0.5s;
 }
 .btn:hover {
-    background: transparent;
-    color: #7cf03d;
-    box-shadow: none;
+  background: transparent;
+  color: #7cf03d;
+  box-shadow: none;
 }
-.home-info .btn-sci .sci{
-margin-left: 20px;
-}
-
-.home-info .btn-sci .sci a{
-display: inline-flex;
-padding: 8px;
-border: 2px solid #7cf03d;
-border-radius: 50%;
-font-size: 20px;
-color: #7cf03d;
-margin: 0 8px;
-transition:  .5s;
+.home-info .btn-sci .sci {
+  margin-left: 20px;
 }
 
-.home-info .btn-sci .sci a:hover{
-background: #7cf03d;
-color: #1f242d;
-box-shadow:  0 0 10px #7cf03d;
+.home-info .btn-sci .sci a {
+  display: inline-flex;
+  padding: 8px;
+  border: 2px solid #7cf03d;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #7cf03d;
+  margin: 0 8px;
+  transition: 0.5s;
+}
+
+.home-info .btn-sci .sci a:hover {
+  background: #7cf03d;
+  color: #1f242d;
+  box-shadow: 0 0 10px #7cf03d;
+}
+
+.home-img .img-box {
+  position: relative;
+  width: 32vw;
+  height: 32vw;
+
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.home-img .img-box::before,
+.home-img .img-box::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: conic-gradient(transparent, transparent, transparent, #7cf03d);
+}
+
+.img-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #1f242d;
+  border-radius: 50%;
+  border: 0.1px solid #1f242d;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.img-item img {
+  position: absolute;
+  display: block;
+  width: 85%;
+  object-fit: cover;
+  mix-blend-mode: lighten;
+}
+
+.bars-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: -1;
+}
+
+.bars-animation .bar {
+  width: 100%;
+  height: 100%;
+  background: #1f242d;
+  transform: translateY(-100%);
+  animation: show-bars 0.5s ease-in-out forwards;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes show-bars {
+  100% {
+    transform: translateY(0%);
+  }
 }
