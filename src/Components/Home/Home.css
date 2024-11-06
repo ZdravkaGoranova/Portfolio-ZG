@@ -3,8 +3,19 @@
   /* flex-direction: column; */
   align-items: center;
   height: 100vh;
+  gap:50px;
   padding: 60px 9% 0;
   color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  animation: show-content 1.5s linear forwards;
+  animation-delay: 1.6s;
+}
+@keyframes show-content {
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 .home-info h1 {
   font-size: 55px;
