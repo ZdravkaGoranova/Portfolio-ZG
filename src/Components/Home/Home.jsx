@@ -21,6 +21,7 @@ const Home = () => {
           </div>
         </div>
         <div className="home-info">
+          <h5>Hello, It&apos; s ME</h5>
           <h1>Zdravka Goranova</h1>
           <h2>
             I&apos;m a
