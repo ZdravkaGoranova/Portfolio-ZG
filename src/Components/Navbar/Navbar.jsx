@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <a href="#" className="logo">
-          Portfolio
+          <span>P</span>ortfolio
         </a>
         <ul>
           <li className="active">
@@ -24,6 +24,13 @@ const Navbar = () => {
             <a href="#">Contatct</a>
           </li>
         </ul>
+        <div className="menu-btn">
+          <span>INTRO</span>
+          <a href="#">
+            <i className="bx bx-menu" id='menu-icon'></i>
+          </a>
+          {/* <div className="bx bx-menu"></div> */}
+        </div>
       </nav>
     </>
   );
