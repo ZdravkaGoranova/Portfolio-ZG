@@ -43,4 +43,5 @@ a {
 .navbar ul li:hover a,
 .navbar ul li.active a {
   color: #7cf03d;
+  border-bottom: 2px solid #7cf03d;
 }
