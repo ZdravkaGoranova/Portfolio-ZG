@@ -1,12 +1,12 @@
 import './App.css';
+import Header from './Components/Header/Header.jsx';
 import Home from './Components/Home/Home.jsx';
-import Navbar from './Components/Navbar/Navbar.jsx';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Home></Home>
+      <Header />
+      <Home />
     </>
   );
 }
