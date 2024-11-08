@@ -26,10 +26,7 @@ const Navbar = () => {
         </ul>
         <div className="menu-btn">
           <span>INTRO</span>
-          <a href="#">
-            <i className="bx bx-menu" id='menu-icon'></i>
-          </a>
-          {/* <div className="bx bx-menu"></div> */}
+          <a href="#" className="bx bx-menu" id="menu-icon"></a>
         </div>
       </nav>
     </>
