@@ -20,6 +20,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+
         <div className="home-info">
           <h5>Hello, It&apos; s ME</h5>
           <h1>Zdravka Goranova</h1>
@@ -46,10 +47,12 @@ const Home = () => {
             Visual Studio Code, and others. I combine my technical knowledge
             with analytical skills and attention to detail.
           </p>
+
           <div className="btn-sci">
             <a href="" className="btn">
               Download CV
             </a>
+
             <div className="sci">
               <a href="#">
                 <i className="bx bxl-linkedin"></i>
