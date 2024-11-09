@@ -68,7 +68,11 @@ a {
   margin-left: 10px;
   z-index: 6;
 }
-
+@media (min-width: 1850px) {
+  .menu-btn {
+    display: none;
+  }
+}
 @media (max-width: 1850px) {
   .navbar {
     padding: 15px 8%;
@@ -77,6 +81,9 @@ a {
   section {
     padding: 0 8%;
     transition: 0.2s;
+  }
+  .menu-btn {
+    display: none;
   }
 }
 @media (max-width: 1380px) {
@@ -93,6 +100,9 @@ a {
     --big-font: 3.5rem;
     transition: 0.2s;
   }
+  .menu-btn {
+    display: none;
+  }
 }
 
 @media (max-width: 1020px) {
@@ -105,11 +115,17 @@ a {
     --big-font: 3rem;
     transition: 0.2s;
   }
+  .menu-btn {
+    display: none;
+  }
 }
 @media (max-width: 950px) {
   .navbar {
     padding: 11px 4%;
     background: #090909;
+  }
+  .menu-btn {
+    display: none;
   }
 }
 @media (max-width: 850px) {
@@ -157,6 +173,17 @@ a {
   .navbar .open {
     left: 0;
   }
+  .menu-btn {
+    background: linear-gradient(130.08deg, var(--main-color) 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    padding: 10px 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--green-color);
+  }
 }
 @media (max-width: 500px) {
   :root {
@@ -166,5 +193,16 @@ a {
   }
   .btn {
     padding: 9px 28px;
+  }
+  .menu-btn {
+    background: linear-gradient(130.08deg, var(--main-color) 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    padding: 10px 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--green-color);
   }
 }
