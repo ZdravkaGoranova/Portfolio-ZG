@@ -1,13 +1,21 @@
 import './Navbar.css';
+import { useState } from 'react';
 
 const Navbar = () => {
+
+const [isOpen, setIsOpen] = useState(false);
+
+ const handleMenuToggle = () => {
+   setIsOpen(!isOpen); 
+ };
+
   return (
     <>
-      <nav className="navbar">
+      <nav className={`navbar ${isOpen ? 'open' : ''}`}>
         <a href="#" className="logo">
           <span>P</span>ortfolio
         </a>
-        <ul>
+        <ul className={isOpen ? 'open' : ''}>
           <li className="active">
             <a href="#">Home</a>
           </li>
@@ -24,9 +32,13 @@ const Navbar = () => {
             <a href="#">Contatct</a>
           </li>
         </ul>
-        <div className="menu-btn">
+        <div className="menu-btn" onClick={handleMenuToggle}>
           <span>INTRO</span>
-          <a href="#" className="bx bx-menu" id="menu-icon"></a>
+          <a
+            href="#"
+            className={`bx ${isOpen ? 'bx-x' : 'bx-menu'}`}
+            id="menu-icon"
+          ></a>
         </div>
       </nav>
     </>
