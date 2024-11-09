@@ -248,7 +248,7 @@ section {
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 170px 4%;
+    padding: 90px 4%;
   }
   .home-img {
     margin: auto;
@@ -285,6 +285,12 @@ section {
   :root {
     --big-font: 1.9rem;
   }
+  .btn-sci {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: start;
+  }
 }
 @media (max-width: 300px) {
   :root {
@@ -294,5 +300,11 @@ section {
     display: inline-block;
     font-size: 20px;
     margin-top: -10px;
+  }
+  .btn-sci {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
