@@ -49,19 +49,23 @@ const Home = () => {
           </p>
 
           <div className="btn-sci">
-            <a href="" className="btn">
+            <a
+              href="/Zdrvavka_Goranova_CV.pdf"
+              className="btn"
+              download="Zdrvavka_Goranova_CV.pdf"
+            >
               Download CV
             </a>
 
             <div className="sci">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/zdravka-goranova/">
                 <i className="bx bxl-linkedin"></i>
               </a>
-              <a href="#">
+              <a href="https://github.com/ZdravkaGoranova">
                 <i className="bx bxl-github"></i>
               </a>
 
-              <a href="#">
+              <a href="https://gitlab.com/zdravka.p.goranova">
                 <i className="bx bxl-gitlab"></i>
               </a>
             </div>
