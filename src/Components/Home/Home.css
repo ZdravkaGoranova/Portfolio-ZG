@@ -145,7 +145,7 @@ section {
   position: absolute;
   width: 500px;
   height: 500px;
-  background: conic-gradient(transparent, transparent, transparent, #7cf03d);
+  background: conic-gradient(transparent, transparent, transparent, var(--green-color));
   transform: rotate(0deg);
   animation: rotate-border 10s linear infinite;
   opacity: 0.8;
