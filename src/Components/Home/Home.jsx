@@ -51,6 +51,7 @@ const Home = ({
               download="Zdrvavka_Goranova_CV.pdf"
             >
               Download CV
+              <i className="bx bx-download"></i>
             </a>
 
             <div className="sci">
@@ -74,8 +75,6 @@ const Home = ({
 
 export default Home;
 Home.propTypes = {
-  // data: PropTypes.array.isRequired,
-
   description: PropTypes.string,
   github: PropTypes.string,
   gitlab: PropTypes.string,

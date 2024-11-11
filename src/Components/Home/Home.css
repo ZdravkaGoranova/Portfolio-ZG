@@ -130,7 +130,8 @@ section {
   transition: 0.5s;
 }
 
-.home-info .btn-sci .sci a:hover {
+.home-info .btn-sci .sci a:hover,
+.home-info .btn-sci a:hover {
   background: var(--green-color);
   color: var(--main-color);
   box-shadow: 0 0 10px var(--green-color);
