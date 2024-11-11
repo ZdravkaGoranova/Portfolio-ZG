@@ -7,6 +7,7 @@ import { db } from './firebaseConfig';
 
 import Header from './Components/Header/Header.jsx';
 import Home from './Components/Home/Home.jsx';
+import Loading from './Components/Loading/Loading.jsx';
 
 function App() {
   const [data, setData] = useState([]);
@@ -46,7 +47,7 @@ function App() {
                     role2={data[0].role2}
                   />
                 ) : (
-                  <p>Loading...</p>
+                  <Loading />
                 )
               }
             />
