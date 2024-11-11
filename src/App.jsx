@@ -1,19 +1,25 @@
 import './App.css';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import Header from './Components/Header/Header.jsx';
 import Home from './Components/Home/Home.jsx';
 
 function App() {
-  
-  // let navbar = document.querySelector('.navbar');
-  // let menu = document.querySelector('#menu-icon');
-  // menu.onClick = () => {
-  //   menu.classList.toggle('bx-x');
-  //   navbar.classList.toggle('open');
-  // };
   return (
     <>
-      <Header />
-      <Home />
+      <BrowserRouter>
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<Home />} />
+            <Route path="/portfolio" element={<Home />} />
+            <Route path="/service" element={<Home />} />
+            <Route path="/contact" element={<Home />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
     </>
   );
 }
