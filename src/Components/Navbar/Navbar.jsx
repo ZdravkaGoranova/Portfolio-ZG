@@ -13,7 +13,7 @@ const [isOpen, setIsOpen] = useState(false);
     <>
       <nav className={`navbar ${isOpen ? 'open' : ''}`}>
         <a href="#" className="logo">
-          <span>P</span>ortfolio
+          <span>P</span>ortfolio <span>Z</span>G
         </a>
         <ul className={isOpen ? 'open' : ''}>
           <li className="active">
