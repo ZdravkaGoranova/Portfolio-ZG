@@ -14,16 +14,15 @@ body {
   opacity: 0.9; */
   background: var(--text-color);
   color: var(--text-color);
-  overflow: hidden;
+  /* overflow-y: auto; */
 }
+
 :root {
   --main-color: #112027;
   /* --main-color: #1f242d; */
   /* --green-color: #7cf03d; */
   --green-color: #ffbf00;
-
   --text-color: #fff;
-
   --p-font: 1.1rem;
   --big-font: 5rem;
 }
