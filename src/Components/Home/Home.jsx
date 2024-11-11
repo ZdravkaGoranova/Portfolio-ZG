@@ -1,6 +1,15 @@
 import './Home.css';
+import PropTypes from 'prop-types';
 
-const Home = () => {
+const Home = ({
+  description,
+  github,
+  gitlab,
+  linkedin,
+  name,
+  role1,
+  role2,
+}) => {
   return (
     <>
       <div className="bars-animation">
@@ -23,30 +32,17 @@ const Home = () => {
 
         <div className="home-info">
           <h5>Hello, It&apos; s ME</h5>
-          <h1>Zdravka Goranova</h1>
+          <h1>{name}</h1>
           <h2>
             I&apos;m a
-            <span
-              style={{ '--i': 2, marginLeft: '10px' }}
-              data-text="Frontend Developer"
-            >
-              Frontend Developer
+            <span style={{ '--i': 2, marginLeft: '10px' }} data-text={role1}>
+              {role1}
             </span>
-            <span
-              style={{ '--i': 1, marginLeft: '10px' }}
-              data-text="Web Developer"
-            >
-              {' '}
-              Web Developer
+            <span style={{ '--i': 1, marginLeft: '10px' }} data-text={role2}>
+              {role2}
             </span>
           </h2>
-          <p>
-            I own a wide range of technologies, including JavaScript, React,
-            Angular, and Node.js. My skills include working with databases such
-            as MongoDB and MySQL, as well as using tools such as Git, GitHub,
-            Visual Studio Code, and others. I combine my technical knowledge
-            with analytical skills and attention to detail.
-          </p>
+          <p>{description}</p>
 
           <div className="btn-sci">
             <a
@@ -58,14 +54,14 @@ const Home = () => {
             </a>
 
             <div className="sci">
-              <a href="https://www.linkedin.com/in/zdravka-goranova/">
+              <a href={linkedin}>
                 <i className="bx bxl-linkedin"></i>
               </a>
-              <a href="https://github.com/ZdravkaGoranova">
+              <a href={github}>
                 <i className="bx bxl-github"></i>
               </a>
 
-              <a href="https://gitlab.com/zdravka.p.goranova">
+              <a href={gitlab}>
                 <i className="bx bxl-gitlab"></i>
               </a>
             </div>
@@ -77,3 +73,14 @@ const Home = () => {
 };
 
 export default Home;
+Home.propTypes = {
+  // data: PropTypes.array.isRequired,
+
+  description: PropTypes.string,
+  github: PropTypes.string,
+  gitlab: PropTypes.string,
+  linkedin: PropTypes.string,
+  name: PropTypes.string,
+  role1: PropTypes.string,
+  role2: PropTypes.string,
+};
