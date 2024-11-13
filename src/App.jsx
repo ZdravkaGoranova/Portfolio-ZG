@@ -11,11 +11,22 @@ import Loading from './Components/Loading/Loading.jsx';
 
 function App() {
   const [data, setData] = useState([]);
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+  };
+
+  useEffect(() => {
+    document.body.className = `${theme}-theme`;
+    console.log('Current body class:', document.body.className);
+  }, [theme]);
 
   useEffect(() => {
     const fetchData = async () => {
       const querySnapshot = await getDocs(collection(db, 'info'));
-
       const data = querySnapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),
@@ -23,14 +34,13 @@ function App() {
       console.log(data);
       setData(data);
     };
-
     fetchData();
   }, []);
 
   return (
     <>
       <BrowserRouter>
-        <Header />
+        <Header theme={theme} toggleTheme={toggleTheme} />
         <main>
           <Routes>
             <Route
