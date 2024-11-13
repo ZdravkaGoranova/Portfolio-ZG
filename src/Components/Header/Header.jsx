@@ -1,14 +1,21 @@
 import './Header.css';
 import Nabar from '../Navbar/Navbar.jsx';
 
-const Header = () => {
+import PropTypes from 'prop-types';
+
+const Header = ({ theme, toggleTheme }) => {
   return (
     <>
       <header>
-        <Nabar />
+        <Nabar theme={theme} toggleTheme={toggleTheme} />
       </header>
     </>
   );
 };
 
 export default Header;
+
+Header.propTypes = {
+  theme: PropTypes.string.isRequired,
+  toggleTheme: PropTypes.func.isRequired,
+};
