@@ -12,8 +12,8 @@
 body {
   /* background: #7cf03d;
   opacity: 0.9; */
-  background: var(--text-color);
-  color: var(--text-color);
+  /* background: var(--text-color);
+  color: var(--text-color); */
   /* overflow-y: auto; */
 }
 
@@ -23,8 +23,28 @@ body {
   /* --green-color: #7cf03d; */
   --green-color: #ffbf00;
   --text-color: #fff;
-  --p-font: 1.1rem;
+  --p-font: 1.4rem;
   --big-font: 5rem;
+}
+
+body.light-theme {
+  background: var(--text-color) !important;
+  color: var(--main-color) !important;
+}
+
+body.dark-theme {
+  background: var(--main-color) !important;
+  color: var(--text-color) !important;
+}
+
+body.light-theme .navbar a,
+body.light-theme .navbar ul a {
+  color: var(--main-color) !important;
+}
+
+body.dark-theme .navbar a,
+body.dark-theme .navbar ul a {
+  color: var(--text-color) !important;
 }
 
 /* ---All Styles--- */
