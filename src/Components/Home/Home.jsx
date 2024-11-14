@@ -1,5 +1,8 @@
+
 import './Home.css';
 import PropTypes from 'prop-types';
+
+import SpeedDialMenu from '../SpeedDial/SpeedDial.jsx';
 
 const Home = ({
   description,
@@ -20,7 +23,7 @@ const Home = ({
         <div className="bar" style={{ '--i': 2 }}></div>
         <div className="bar" style={{ '--i': 1 }}></div>
       </div>
-
+      <SpeedDialMenu />
       <section className="home">
         <div className="home-img">
           <div className="img-box">

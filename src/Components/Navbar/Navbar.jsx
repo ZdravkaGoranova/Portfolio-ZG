@@ -1,10 +1,12 @@
 import './Navbar.css';
 import { useState } from 'react';
+
 import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import PropTypes from 'prop-types';
+
 
 const Navbar = ({ theme, toggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,49 +63,51 @@ const Navbar = ({ theme, toggleTheme }) => {
   }));
 
   return (
-    <nav className={`navbar ${isOpen ? 'open' : ''}`}>
-      <a href="#" className="logo">
-        <span>P</span>ortfolio <span>Z</span>G
-      </a>
-      <ul className={isOpen ? 'open' : ''}>
-        <li className="active">
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Service</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
+    <>
+      <nav className={`navbar ${isOpen ? 'open' : ''}`}>
+        <a href="#" className="logo">
+          <span>P</span>ortfolio <span>Z</span>G
+        </a>
+        <ul className={isOpen ? 'open' : ''}>
+          <li className="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">Service</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
 
-      <FormGroup>
-        <FormControlLabel
-          control={
-            <MaterialUISwitch
-              sx={{ m: 1 }}
-              checked={theme === 'dark'}
-              onClick={toggleTheme}
-            />
-          }
-        />
-      </FormGroup>
+        <FormGroup>
+          <FormControlLabel
+            control={
+              <MaterialUISwitch
+                sx={{ m: 1 }}
+                checked={theme === 'dark'}
+                onClick={toggleTheme}
+              />
+            }
+          />
+        </FormGroup>
 
-      <div className="menu-btn" onClick={handleMenuToggle}>
-        <span>INTRO</span>
-        <a
-          href="#"
-          className={`bx ${isOpen ? 'bx-x' : 'bx-menu'}`}
-          id="menu-icon"
-        ></a>
-      </div>
-    </nav>
+        <div className="menu-btn" onClick={handleMenuToggle}>
+          <span>INTRO</span>
+          <a
+            href="#"
+            className={`bx ${isOpen ? 'bx-x' : 'bx-menu'}`}
+            id="menu-icon"
+          ></a>
+        </div>
+      </nav>
+    </>
   );
 };
 
