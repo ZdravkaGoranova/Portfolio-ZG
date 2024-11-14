@@ -14,7 +14,7 @@ body {
   opacity: 0.9; */
   /* background: var(--text-color);
   color: var(--text-color); */
-  /* overflow-y: auto; */
+  overflow-y: auto;
 }
 
 :root {
@@ -28,25 +28,21 @@ body {
 }
 
 body.light-theme {
-  background: var(--text-color) !important;
-  color: var(--main-color) !important;
+  background: var(--main-color);
+  color: var(--main-color);
 }
-
-body.dark-theme {
-  background: var(--main-color) !important;
-  color: var(--text-color) !important;
-}
-
 body.light-theme .navbar a,
 body.light-theme .navbar ul a {
-  color: var(--main-color) !important;
+  color: var(--main-color);
 }
-
+body.dark-theme {
+  background: var(--text-color);
+  color: var(--text-color);
+}
 body.dark-theme .navbar a,
 body.dark-theme .navbar ul a {
-  color: var(--text-color) !important;
+  color: var(--text-color);
 }
-
 /* ---All Styles--- */
 /* @media (max-width: 1850px) {
   .navbar {
