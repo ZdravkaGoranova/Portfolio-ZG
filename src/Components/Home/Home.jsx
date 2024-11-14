@@ -23,7 +23,7 @@ const Home = ({
         <div className="bar" style={{ '--i': 2 }}></div>
         <div className="bar" style={{ '--i': 1 }}></div>
       </div>
-      <SpeedDialMenu />
+      {/* <SpeedDialMenu /> */}
       <section className="home">
         <div className="home-img">
           <div className="img-box">
