@@ -28,7 +28,7 @@ body {
 }
 
 body.light-theme {
-  background: var(--main-color);
+  background: var(--text-color);
   color: var(--main-color);
 }
 body.light-theme .navbar a,
@@ -36,13 +36,42 @@ body.light-theme .navbar ul a {
   color: var(--main-color);
 }
 body.dark-theme {
-  background: var(--text-color);
+  background: var(--main-color);
   color: var(--text-color);
 }
 body.dark-theme .navbar a,
 body.dark-theme .navbar ul a {
   color: var(--text-color);
 }
+main {
+  /* position: relative;
+  width: calc(min(90rem, 90%));
+  margin: 0 auto;
+  min-height: 100vh;
+  column-gap: 3rem;
+  padding-block: min(20vh, 3rem); */
+
+  /* position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  gap: 40px;
+  padding: 60px 9% 0;
+  visibility: hidden;
+  opacity: 0;
+  animation: show-content 1.5s linear forwards;
+  animation-delay: 1.6s; */
+}
+body.light-theme main {
+  color: var(--main-color);
+}
+
+body.dark-theme main {
+  color: var(--text-color);
+}
+
 /* ---All Styles--- */
 /* @media (max-width: 1850px) {
   .navbar {
