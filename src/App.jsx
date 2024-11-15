@@ -8,6 +8,7 @@ import { db } from './firebaseConfig';
 import Header from './Components/Header/Header.jsx';
 import Home from './Components/Home/Home.jsx';
 import Loading from './Components/Loading/Loading.jsx';
+import Projects from './Components/Projects/Projects.jsx';
 
 function App() {
   const [data, setData] = useState([]);
@@ -41,32 +42,32 @@ function App() {
     <>
       <BrowserRouter>
         <Header theme={theme} toggleTheme={toggleTheme} />
-        <main>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                data.length > 0 ? (
-                  <Home
-                    description={data[0].description}
-                    github={data[0].github}
-                    gitlab={data[0].gitlab}
-                    linkedin={data[0].linkedin}
-                    name={data[0].name}
-                    role1={data[0].role1}
-                    role2={data[0].role2}
-                  />
-                ) : (
-                  <Loading />
-                )
-              }
-            />
-            <Route path="/about" element={<Home />} />
-            <Route path="/portfolio" element={<Home />} />
-            <Route path="/service" element={<Home />} />
-            <Route path="/contact" element={<Home />} />
-          </Routes>
-        </main>
+        {/* <main> */}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              data.length > 0 ? (
+                <Home
+                  description={data[0].description}
+                  github={data[0].github}
+                  gitlab={data[0].gitlab}
+                  linkedin={data[0].linkedin}
+                  name={data[0].name}
+                  role1={data[0].role1}
+                  role2={data[0].role2}
+                />
+              ) : (
+                <Loading />
+              )
+            }
+          />
+          <Route path="/about" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/service" element={<Home />} />
+          <Route path="/contact" element={<Home />} />
+        </Routes>
+        {/* </main> */}
       </BrowserRouter>
     </>
   );
