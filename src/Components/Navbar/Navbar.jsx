@@ -1,12 +1,12 @@
 import './Navbar.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import PropTypes from 'prop-types';
-
 
 const Navbar = ({ theme, toggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -76,7 +76,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             <a href="#">About</a>
           </li>
           <li>
-            <a href="#">Portfolio</a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
             <a href="#">Service</a>
