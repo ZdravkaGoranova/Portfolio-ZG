@@ -228,7 +228,7 @@ const Projects = () => {
               <div className="title">
                 <h2>Beauty-Traiding</h2>
               </div>
-              <img src="../../../public/portFolio.jpg" />
+              <img src="/public/portFolio.jpg" />
               <div className="content">
                 {/* <div className="score">
                 
@@ -326,109 +326,3 @@ const Projects = () => {
 };
 
 export default Projects;
-//  <main>
-//     <div className="container-projects">
-//       <Swiper
-//         modules={[Pagination]}
-//         grabCursor={true}
-//         initialSlide={2}
-//         centeredSlides={true}
-//         slidesPerView="auto"
-//         speed={800}
-//         slideToClickedSlide={true}
-//         pagination={{ el: '.swiper-pagination', clickable: true }}
-//         breakpoints={{
-//           320: { spaceBetween: 40 },
-//           430: { spaceBetween: 50 },
-//           580: { spaceBetween: 70 },
-//           650: { spaceBetween: 30 },
-//         }}
-//       >
-//         <SwiperSlide className="swiper-slide slide-1">
-//           <div className="title">
-//             <h1>The Bear</h1>
-//           </div>
-//           <div className="content">
-//             <div className="score">8.6</div>
-//             <div className="text">
-//               <h2>The Bear</h2>
-//               <p>
-//                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-//                 Expedita dignissimos eos facere quas. Dolorem rem autem,
-//                 labore vel corrupti obcaecati facere ab non iure, eum voluptas
-//                 ullam velit blanditiis eius?
-//               </p>
-//             </div>
-//             <div className="genre">
-//               <span style={{ '--i': 1 }}>Drama</span>
-//               <span style={{ '--i': 2 }}>Comedy</span>
-//             </div>
-//           </div>
-//         </SwiperSlide>
-//         <SwiperSlide className="swiper-slide slide-2">
-//           <div className="title">
-//             <h1>The Snowman</h1>
-//           </div>
-//           <div className="content">
-//             <div className="score">8.6</div>
-//             <div className="text">
-//               <h2>The Snowman</h2>
-//               <p>
-//                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-//                 Expedita dignissimos eos facere quas. Dolorem rem autem,
-//                 labore vel corrupti obcaecati facere ab non iure, eum voluptas
-//                 ullam velit blanditiis eius?
-//               </p>
-//             </div>
-//             <div className="genre">
-//               <span style={{ '--i': 1 }}>Drama</span>
-//               <span style={{ '--i': 2 }}>Romantic</span>
-//             </div>
-//           </div>
-//         </SwiperSlide>
-//         <SwiperSlide className="swiper-slide slide-3">
-//           <div className="title">
-//             <h1>The Superman</h1>
-//           </div>
-//           <div className="content">
-//             <div className="score">8.6</div>
-//             <div className="text">
-//               <h2>The Superman</h2>
-//               <p>
-//                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-//                 Expedita dignissimos eos facere quas. Dolorem rem autem,
-//                 labore vel corrupti обcaecati facere ab non iure, eum voluptas
-//                 ullam velit blanditiis eius?
-//               </p>
-//             </div>
-//             <div className="genre">
-//               <span style={{ '--i': 1 }}>Drama</span>
-//               <span style={{ '--i': 2 }}>Horror</span>
-//             </div>
-//           </div>
-//         </SwiperSlide>
-//         <SwiperSlide className="swiper-slide slide-4">
-//           <div className="title">
-//             <h1>The Lufthansa</h1>
-//           </div>
-//           <div className="content">
-//             <div className="score">8.6</div>
-//             <div className="text">
-//               <h2>The Lufthansa</h2>
-//               <p>
-//                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-//                 Expedita dignissimos eos facere quas. Dolorem rem autem,
-//                 labore vel corrupti обcaecati facere ab non iure, eum voluptas
-//                 ullam velit blanditiis eius?
-//               </p>
-//             </div>
-//             <div className="genre">
-//               <span style={{ '--i': 1 }}>Drama</span>
-//               <span style={{ '--i': 2 }}>Horror</span>
-//             </div>
-//           </div>
-//         </SwiperSlide>
-//         <div className="swiper-pagination"></div>
-//       </Swiper>
-//     </div>
-//   </main>
