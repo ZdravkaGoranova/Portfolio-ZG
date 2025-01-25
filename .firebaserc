@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "portfolio-zg"
-  }
+    "default": "portfolio-zg",
+    "staging": "portfolio-zg"
+  },
+  "targets": {},
+  "etags": {}
 }
