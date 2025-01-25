@@ -37,7 +37,7 @@ const Projects = () => {
               <div className="title">
                 <h2>Lufthansa_APL_Effective_Panels</h2>
               </div>
-              <img src="../../../public/start.jpg" />
+              <img src="/start.jpg" />
               <div className="content">
                 {/* <div className="score">
                 
