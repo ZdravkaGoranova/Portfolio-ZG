@@ -63,7 +63,7 @@ function App() {
             }
           />
           <Route path="/about" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects" element={<Projects theme={theme} />} />
           <Route path="/service" element={<Home />} />
           <Route path="/contact" element={<Home />} />
         </Routes>
