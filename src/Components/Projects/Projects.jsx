@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import PropTypes from 'prop-types';
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -8,9 +9,54 @@ import './Projects.css';
 
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import Button from '@mui/material/Button';
+import { styled } from '@mui/material/styles';
+import Stack from '@mui/material/Stack';
+
 import OpenInNewOutlinedIcon from '@mui/icons-material/OpenInNewOutlined';
 
-const Projects = () => {
+const BootstrapButton = styled(Button)(({ theme }) => ({
+  boxShadow: 'none',
+  textTransform: 'none',
+  lineHeight: 1.5,
+  fontSize: '12px',
+  padding: '4px 8px',
+  border: `1px solid ${theme.palette.divider}`,
+  backgroundColor: 'transparent',
+  color: theme.palette.mode === 'dark' ? 'white' : 'black', // Адаптивен цвят на текста
+  borderColor: '#cba75b',
+  fontFamily: [
+    '-apple-system',
+    'BlinkMacSystemFont',
+    '"Segoe UI"',
+    'Roboto',
+    '"Helvetica Neue"',
+    'Arial',
+    'sans-serif',
+    '"Apple Color Emoji"',
+    '"Segoe UI Emoji"',
+    '"Segoe UI Symbol"',
+  ].join(','),
+  '&:hover': {
+    backgroundColor: '#ffbf00',
+    borderColor: '#ffbf00',
+    boxShadow: 'none',
+    color: 'white',
+  },
+  '&:active': {
+    boxShadow: 'none',
+    backgroundColor: '#ffbf00',
+    borderColor: '#ffbf00',
+  },
+  '&:focus': {
+    boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
+  },
+}));
+
+const Projects = ({ theme }) => {
+  console.log('Current theme class:', theme);
+  const textColor = theme === 'dark' ? 'white' : 'black';
+  const borderColor = theme === 'dark' ? '#cba75b' : '#cba75b';
+
   return (
     <>
       <div className="container-projects">
@@ -58,26 +104,46 @@ const Projects = () => {
                 </div>
 
                 <div className="genre">
-                  <span style={{ '--i': 1 }}>
-                    <Button
+                  <Stack
+                    direction="row"
+                    spacing={2}
+                    justifyContent="center"
+                    alignItems="center"
+                  >
+                    <BootstrapButton
                       variant="outlined"
                       size="small"
                       startIcon={<OpenInNewOutlinedIcon />}
-                      color="white"
+                      sx={{
+                        color: textColor,
+                        borderColor: borderColor,
+                        '&:hover': {
+                          backgroundColor: '#ffbf00',
+                          color: 'white',
+                          borderColor: '#ffbf00',
+                        },
+                      }}
                     >
                       Link to Source Code
-                    </Button>
-                  </span>
-                  <span style={{ '--i': 2 }}>
-                    <Button
+                    </BootstrapButton>
+
+                    <BootstrapButton
                       variant="outlined"
                       size="small"
-                      color="white"
                       startIcon={<OpenInNewOutlinedIcon />}
+                      sx={{
+                        color: textColor,
+                        borderColor: borderColor,
+                        '&:hover': {
+                          backgroundColor: '#ffbf00',
+                          color: 'white',
+                          borderColor: '#ffbf00',
+                        },
+                      }}
                     >
                       Live Preview
-                    </Button>
-                  </span>
+                    </BootstrapButton>
+                  </Stack>
                 </div>
               </div>
             </SwiperSlide>
@@ -86,7 +152,7 @@ const Projects = () => {
               <div className="title">
                 <h2>Wood-Woord-Bulgaria</h2>
               </div>
-              <img src="../../../public/CatalogProfilePage.jpg" />
+              <img src="/CatalogProfilePage.jpg" />
               <div className="content">
                 {/* <div className="score">
                 
@@ -134,7 +200,7 @@ const Projects = () => {
               <div className="title">
                 <h2>GBstyle-nails-By-Galya-Lazarova</h2>
               </div>
-              <img src="../../../public/Home.jpg" />
+              <img src="/Home.jpg" />
               <div className="content">
                 {/* <div className="score">
                 
@@ -181,7 +247,7 @@ const Projects = () => {
               <div className="title">
                 <h2>Аmigurumi</h2>
               </div>
-              <img src="../../../public/HomePage.jpg" />
+              <img src="/HomePage.jpg" />
               <div className="content">
                 {/* <div className="score">
                 
@@ -224,11 +290,12 @@ const Projects = () => {
                 </div>
               </div>
             </SwiperSlide>
+
             <SwiperSlide className="swiper-slide slide-5">
               <div className="title">
                 <h2>Beauty-Traiding</h2>
               </div>
-              <img src="/public/portFolio.jpg" />
+              <img src="/portFolio.jpg" />
               <div className="content">
                 {/* <div className="score">
                 
@@ -275,7 +342,7 @@ const Projects = () => {
               <div className="title">
                 <h2>Аmigurumi</h2>
               </div>
-              <img src="../../../public/HomePage.jpg" />
+              <img src="/HomePage.jpg" />
               <div className="content">
                 {/* <div className="score">
                 
@@ -326,3 +393,7 @@ const Projects = () => {
 };
 
 export default Projects;
+Projects.propTypes = {
+  theme: PropTypes.string.isRequired,
+  
+};
