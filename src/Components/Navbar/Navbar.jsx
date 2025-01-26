@@ -78,9 +78,7 @@ const Navbar = ({ theme, toggleTheme }) => {
           <li>
             <Link to="/projects">Projects</Link>
           </li>
-          <li>
-            <a href="#">Service</a>
-          </li>
+         
           <li>
             <a href="#">Contact</a>
           </li>
