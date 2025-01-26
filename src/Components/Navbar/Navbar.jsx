@@ -65,12 +65,12 @@ const Navbar = ({ theme, toggleTheme }) => {
   return (
     <>
       <nav className={`navbar ${isOpen ? 'open' : ''}`}>
-        <a href="#" className="logo">
+        <a href="/" className="logo">
           <span>P</span>ortfolio <span>Z</span>G
         </a>
         <ul className={isOpen ? 'open' : ''}>
           <li className="active">
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="#">About</a>
