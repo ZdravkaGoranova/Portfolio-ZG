@@ -411,7 +411,7 @@ const Projects = ({ theme }) => {
               <div className="title">
                 <h2>Beauty-Traiding</h2>
               </div>
-              <img src="/portFolio.jpg" />
+              <img src="/homeScreenBeauty.png" />
               <div className="content">
                 {/* <div className="score">
                 
@@ -488,8 +488,87 @@ const Projects = ({ theme }) => {
               </div>
             </SwiperSlide>
 
-          
+            <SwiperSlide className="swiper-slide slide-6">
+              <div className="title">
+                <h2>Аmigurumi</h2>
+              </div>
+              <img src="/HomePage.jpg" />
+              <div className="content">
+                {/* <div className="score">
+                
+                </div> */}
 
+                <div className="text">
+                  <h4>Аmigurumi</h4>
+
+                  <p>
+                    Angular-Project-Amigurumi is a place, where you can browse
+                    some of the most popular Amigurumi in the world and add some
+                    new product that you have created. Authenticated users can
+                    like and comment on products in the app. Sellers can use the
+                    platform to add, update and delete products from their
+                    profile page.
+                  </p>
+                </div>
+
+                <div className="genre">
+                  <Stack
+                    direction="row"
+                    spacing={2}
+                    justifyContent="center"
+                    alignItems="center"
+                  >
+                    <a
+                      href="https://github.com/ZdravkaGoranova/Beauty-Traiding"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: 'inline-flex' }}
+                    >
+                      <BootstrapButton
+                        variant="outlined"
+                        size="small"
+                        startIcon={<OpenInNewOutlinedIcon />}
+                        sx={{
+                          color: textColor,
+                          borderColor: borderColor,
+                          '&:hover': {
+                            backgroundColor: '#ffbf00',
+                            color: 'white',
+                            borderColor: '#ffbf00',
+                          },
+                        }}
+                      >
+                        Link to Source Code
+                      </BootstrapButton>
+                    </a>
+
+                    <a
+                      href="https://beauty-training.web.app/home"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: 'inline-flex' }}
+                    >
+                      <BootstrapButton
+                        variant="outlined"
+                        size="small"
+                        startIcon={<OpenInNewOutlinedIcon />}
+                        sx={{
+                          color: textColor,
+                          borderColor: borderColor,
+                          '&:hover': {
+                            backgroundColor: '#ffbf00',
+                            color: 'white',
+                            borderColor: '#ffbf00',
+                          },
+                        }}
+                      >
+                        Live Preview
+                      </BootstrapButton>
+                    </a>
+                  </Stack>
+                </div>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
       </div>
