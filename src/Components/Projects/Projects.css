@@ -275,6 +275,7 @@ main > div > a:hover {
 
 .swiper-slide p {
   /* color: #dadada; */
+  text-align: justify;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   padding: 0 1.563rem;
