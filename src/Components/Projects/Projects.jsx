@@ -110,39 +110,53 @@ const Projects = ({ theme }) => {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <BootstrapButton
-                      variant="outlined"
-                      size="small"
-                      startIcon={<OpenInNewOutlinedIcon />}
-                      sx={{
-                        color: textColor,
-                        borderColor: borderColor,
-                        '&:hover': {
-                          backgroundColor: '#ffbf00',
-                          color: 'white',
-                          borderColor: '#ffbf00',
-                        },
-                      }}
+                    <a
+                      href="https://github.com/ZdravkaGoranova/Lufthansa_APL_Effective_Panels"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: 'inline-flex' }}
                     >
-                      Link to Source Code
-                    </BootstrapButton>
+                      <BootstrapButton
+                        variant="outlined"
+                        size="small"
+                        startIcon={<OpenInNewOutlinedIcon />}
+                        sx={{
+                          color: textColor,
+                          borderColor: borderColor,
+                          '&:hover': {
+                            backgroundColor: '#ffbf00',
+                            color: 'white',
+                            borderColor: '#ffbf00',
+                          },
+                        }}
+                      >
+                        Link to Source Code
+                      </BootstrapButton>
+                    </a>
 
-                    <BootstrapButton
-                      variant="outlined"
-                      size="small"
-                      startIcon={<OpenInNewOutlinedIcon />}
-                      sx={{
-                        color: textColor,
-                        borderColor: borderColor,
-                        '&:hover': {
-                          backgroundColor: '#ffbf00',
-                          color: 'white',
-                          borderColor: '#ffbf00',
-                        },
-                      }}
+                    <a
+                      href="https://lufthansa-pdf.web.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: 'inline-flex' }}
                     >
-                      Live Preview
-                    </BootstrapButton>
+                      <BootstrapButton
+                        variant="outlined"
+                        size="small"
+                        startIcon={<OpenInNewOutlinedIcon />}
+                        sx={{
+                          color: textColor,
+                          borderColor: borderColor,
+                          '&:hover': {
+                            backgroundColor: '#ffbf00',
+                            color: 'white',
+                            borderColor: '#ffbf00',
+                          },
+                        }}
+                      >
+                        Live Preview
+                      </BootstrapButton>
+                    </a>
                   </Stack>
                 </div>
               </div>
@@ -172,26 +186,60 @@ const Projects = ({ theme }) => {
                 </div>
 
                 <div className="genre">
-                  <span style={{ '--i': 1 }}>
-                    <Button
-                      variant="outlined"
-                      size="small"
-                      startIcon={<OpenInNewOutlinedIcon />}
-                      color="white"
+                  <Stack
+                    direction="row"
+                    spacing={2}
+                    justifyContent="center"
+                    alignItems="center"
+                  >
+                    <a
+                      href="https://github.com/ZdravkaGoranova/My-React-Prodject-2023-Wood-Woord-Bulgaria"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: 'inline-flex' }}
                     >
-                      Link to Source Code
-                    </Button>
-                  </span>
-                  <span style={{ '--i': 2 }}>
-                    <Button
-                      variant="outlined"
-                      size="small"
-                      color="white"
-                      startIcon={<OpenInNewOutlinedIcon />}
+                      <BootstrapButton
+                        variant="outlined"
+                        size="small"
+                        startIcon={<OpenInNewOutlinedIcon />}
+                        sx={{
+                          color: textColor,
+                          borderColor: borderColor,
+                          '&:hover': {
+                            backgroundColor: '#ffbf00',
+                            color: 'white',
+                            borderColor: '#ffbf00',
+                          },
+                        }}
+                      >
+                        Link to Source Code
+                      </BootstrapButton>
+                    </a>
+
+                    <a
+                      href="https://react-wood-working.web.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: 'inline-flex' }}
                     >
-                      Live Preview
-                    </Button>
-                  </span>
+                      <BootstrapButton
+                        variant="outlined"
+                        size="small"
+                        startIcon={<OpenInNewOutlinedIcon />}
+                        sx={{
+                          color: textColor,
+                          borderColor: borderColor,
+                          '&:hover': {
+                            backgroundColor: '#ffbf00',
+                            color: 'white',
+                            borderColor: '#ffbf00',
+                          },
+                        }}
+                      >
+                        Live Preview
+                      </BootstrapButton>
+                    </a>
+                  </Stack>
                 </div>
               </div>
             </SwiperSlide>
@@ -219,26 +267,60 @@ const Projects = ({ theme }) => {
                 </div>
 
                 <div className="genre">
-                  <span style={{ '--i': 1 }}>
-                    <Button
-                      variant="outlined"
-                      size="small"
-                      startIcon={<OpenInNewOutlinedIcon />}
-                      color="white"
+                  <Stack
+                    direction="row"
+                    spacing={2}
+                    justifyContent="center"
+                    alignItems="center"
+                  >
+                    <a
+                      href="https://github.com/ZdravkaGoranova/GBstyle-nails-By-Galya-Lazarova"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: 'inline-flex' }}
                     >
-                      Link to Source Code
-                    </Button>
-                  </span>
-                  <span style={{ '--i': 2 }}>
-                    <Button
-                      variant="outlined"
-                      size="small"
-                      color="white"
-                      startIcon={<OpenInNewOutlinedIcon />}
+                      <BootstrapButton
+                        variant="outlined"
+                        size="small"
+                        startIcon={<OpenInNewOutlinedIcon />}
+                        sx={{
+                          color: textColor,
+                          borderColor: borderColor,
+                          '&:hover': {
+                            backgroundColor: '#ffbf00',
+                            color: 'white',
+                            borderColor: '#ffbf00',
+                          },
+                        }}
+                      >
+                        Link to Source Code
+                      </BootstrapButton>
+                    </a>
+
+                    <a
+                      href="https://gbstyle-nails-galya-lazarova.web.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: 'inline-flex' }}
                     >
-                      Live Preview
-                    </Button>
-                  </span>
+                      <BootstrapButton
+                        variant="outlined"
+                        size="small"
+                        startIcon={<OpenInNewOutlinedIcon />}
+                        sx={{
+                          color: textColor,
+                          borderColor: borderColor,
+                          '&:hover': {
+                            backgroundColor: '#ffbf00',
+                            color: 'white',
+                            borderColor: '#ffbf00',
+                          },
+                        }}
+                      >
+                        Live Preview
+                      </BootstrapButton>
+                    </a>
+                  </Stack>
                 </div>
               </div>
             </SwiperSlide>
@@ -267,26 +349,60 @@ const Projects = ({ theme }) => {
                 </div>
 
                 <div className="genre">
-                  <span style={{ '--i': 1 }}>
-                    <Button
-                      variant="outlined"
-                      size="small"
-                      startIcon={<OpenInNewOutlinedIcon />}
-                      color="white"
+                  <Stack
+                    direction="row"
+                    spacing={2}
+                    justifyContent="center"
+                    alignItems="center"
+                  >
+                    <a
+                      href="https://github.com/ZdravkaGoranova/Angular-Project-Amigurumi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: 'inline-flex' }}
                     >
-                      Link to Source Code
-                    </Button>
-                  </span>
-                  <span style={{ '--i': 2 }}>
-                    <Button
-                      variant="outlined"
-                      size="small"
-                      color="white"
-                      startIcon={<OpenInNewOutlinedIcon />}
+                      <BootstrapButton
+                        variant="outlined"
+                        size="small"
+                        startIcon={<OpenInNewOutlinedIcon />}
+                        sx={{
+                          color: textColor,
+                          borderColor: borderColor,
+                          '&:hover': {
+                            backgroundColor: '#ffbf00',
+                            color: 'white',
+                            borderColor: '#ffbf00',
+                          },
+                        }}
+                      >
+                        Link to Source Code
+                      </BootstrapButton>
+                    </a>
+
+                    <a
+                      href="https://amugurumiusers.web.app/home"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: 'inline-flex' }}
                     >
-                      Live Preview
-                    </Button>
-                  </span>
+                      <BootstrapButton
+                        variant="outlined"
+                        size="small"
+                        startIcon={<OpenInNewOutlinedIcon />}
+                        sx={{
+                          color: textColor,
+                          borderColor: borderColor,
+                          '&:hover': {
+                            backgroundColor: '#ffbf00',
+                            color: 'white',
+                            borderColor: '#ffbf00',
+                          },
+                        }}
+                      >
+                        Live Preview
+                      </BootstrapButton>
+                    </a>
+                  </Stack>
                 </div>
               </div>
             </SwiperSlide>
@@ -314,77 +430,66 @@ const Projects = ({ theme }) => {
                 </div>
 
                 <div className="genre">
-                  <span style={{ '--i': 1 }}>
-                    <Button
-                      variant="outlined"
-                      size="small"
-                      startIcon={<OpenInNewOutlinedIcon />}
-                      color="white"
+                  <Stack
+                    direction="row"
+                    spacing={2}
+                    justifyContent="center"
+                    alignItems="center"
+                  >
+                    <a
+                      href="https://github.com/ZdravkaGoranova/Beauty-Traiding"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: 'inline-flex' }}
                     >
-                      Link to Source Code
-                    </Button>
-                  </span>
-                  <span style={{ '--i': 2 }}>
-                    <Button
-                      variant="outlined"
-                      size="small"
-                      color="white"
-                      startIcon={<OpenInNewOutlinedIcon />}
+                      <BootstrapButton
+                        variant="outlined"
+                        size="small"
+                        startIcon={<OpenInNewOutlinedIcon />}
+                        sx={{
+                          color: textColor,
+                          borderColor: borderColor,
+                          '&:hover': {
+                            backgroundColor: '#ffbf00',
+                            color: 'white',
+                            borderColor: '#ffbf00',
+                          },
+                        }}
+                      >
+                        Link to Source Code
+                      </BootstrapButton>
+                    </a>
+
+                    <a
+                      href="https://beauty-training.web.app/home"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: 'inline-flex' }}
                     >
-                      Live Preview
-                    </Button>
-                  </span>
+                      <BootstrapButton
+                        variant="outlined"
+                        size="small"
+                        startIcon={<OpenInNewOutlinedIcon />}
+                        sx={{
+                          color: textColor,
+                          borderColor: borderColor,
+                          '&:hover': {
+                            backgroundColor: '#ffbf00',
+                            color: 'white',
+                            borderColor: '#ffbf00',
+                          },
+                        }}
+                      >
+                        Live Preview
+                      </BootstrapButton>
+                    </a>
+                  </Stack>
                 </div>
               </div>
             </SwiperSlide>
 
-            <SwiperSlide className="swiper-slide slide-6">
-              <div className="title">
-                <h2>Аmigurumi</h2>
-              </div>
-              <img src="/HomePage.jpg" />
-              <div className="content">
-                {/* <div className="score">
-                
-                </div> */}
+          
 
-                <div className="text">
-                  <h4>Аmigurumi</h4>
-
-                  <p>
-                    Angular-Project-Amigurumi is a place, where you can browse
-                    some of the most popular Amigurumi in the world and add some
-                    new product that you have created. Authenticated users can
-                    like and comment on products in the app. Sellers can use the
-                    platform to add, update and delete products from their
-                    profile page.
-                  </p>
-                </div>
-
-                <div className="genre">
-                  <span style={{ '--i': 1 }}>
-                    <Button
-                      variant="outlined"
-                      size="small"
-                      startIcon={<OpenInNewOutlinedIcon />}
-                      color="white"
-                    >
-                      Link to Source Code
-                    </Button>
-                  </span>
-                  <span style={{ '--i': 2 }}>
-                    <Button
-                      variant="outlined"
-                      size="small"
-                      color="white"
-                      startIcon={<OpenInNewOutlinedIcon />}
-                    >
-                      Live Preview
-                    </Button>
-                  </span>
-                </div>
-              </div>
-            </SwiperSlide>
           </Swiper>
         </div>
       </div>
@@ -395,5 +500,4 @@ const Projects = ({ theme }) => {
 export default Projects;
 Projects.propTypes = {
   theme: PropTypes.string.isRequired,
-  
 };

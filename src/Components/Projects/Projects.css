@@ -274,7 +274,7 @@ main > div > a:hover {
 }
 
 .swiper-slide p {
-  color: #dadada;
+  /* color: #dadada; */
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   padding: 0 1.563rem;
@@ -288,7 +288,7 @@ main > div > a:hover {
 
 .swiper-slide a {
   margin: 1.25rem 1.563rem 3.438rem 1.563rem;
-  padding: 0.438em 1.875rem;
+  /* padding: 0.438em 1.875rem; */
   font-size: 0.9rem;
 }
 
@@ -329,4 +329,14 @@ main > div > a:hover {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
     url('https://images.unsplash.com/photo-1598977123118-4e30ba3c4f5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
       no-repeat 50% 50% / cover;
+}
+
+.genre {
+  display: flex;
+  gap: 16px;  /* Разстоянието между бутоните */
+  justify-content: center; /* Подреждане по хоризонтала */
+  align-items: center; /* Центриране по вертикала */
+}
+a {
+  display: inline-flex;  /* Това ще накара бутоните да не се разширяват в блок */
 }
