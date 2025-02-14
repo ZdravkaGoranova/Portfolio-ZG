@@ -49,9 +49,9 @@ const Home = ({
 
           <div className="btn-sci">
             <a
-              href="/Zdravka_Goranova_CV_Resume.pdf"
+              href="/Zdravka_Goranova_Resume_CV.pdf"
               className="btn btn-download"
-              download="Zdravka_Goranova_CV_Resume.pdf"
+              download="Zdravka_Goranova_Resume_CV.pdf"
             >
               Download CV
               <i className="bx bx-download"></i>
